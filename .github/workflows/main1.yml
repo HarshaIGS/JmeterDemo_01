@@ -33,3 +33,12 @@ jobs:
       - name: Run a multi-line script
         run: |
           ./JmeterGit.bat
+          
+          name: Run a multi-line script
+        
+       - uses: actions/upload-artifact@v3
+         with:
+          name: my-artifact
+          path: ./Results/test.jtl
+          
+      
